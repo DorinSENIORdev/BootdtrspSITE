@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "IMGbrand",
+			"path": "../htmlnatSITE/IMGbrand"
+		},
+		{
+			"name": "BootStrap.SITE",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "BootStrap.SITE",
+		"files.associations": {
+			"ostream": "cpp"
+		}
+	}
+}
