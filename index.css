@@ -47,8 +47,8 @@ body {
 @media (max-width: 768px) {
     .brand-bar {
       width: 100%;
-      padding: 5px; /* Reducem padding-ul pentru ecranele mici */
-      text-align: center; /* Centram textul pe telefoane */
+      padding: 5px; 
+      text-align: center; 
     }
     .brand-bar img {
         max-width: 60px; 
@@ -64,4 +64,41 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 170px;
     margin-top: 100px;
+  }
+.btn-warning{
+    border: #7f6d12;
+    background-color: #cfae0c;
+    color: #fff;
+    width: 130px;
+    height: 50px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .popup{
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background-color: #ffffff;
+    left: calc(50% - 260px);
+    top: calc(50% - 200px);
+    z-index: 10;
+    display: none;
+  }
+  .overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    display: none;
+  }
+  .popup.active{
+    display: block;
+  }
+.popup.active + .overlay{
+    display: block;
   }
