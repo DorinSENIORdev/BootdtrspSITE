@@ -1,15 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Selectează butonul folosind clasa
-    const buttons = document.querySelectorAll('.btn.btn-warning.my-2');
-    const popup = document.querySelector('.popup');
-    const overlay = document.querySelector('.overlay');
-    console.log(buttons);
-    buttons.forEach(button => button.addEventListener('click', () => {
-        popup.classList.add('active');
-    }));
+const buttons = document.querySelectorAll('.btn.btn-warning.my-2');
+const counter = document.querySelector('.cartSize');
+const decrement = document.querySelector('.minus');
 
-    overlay.addEventListener('click', () => {
-        popup.classList.remove('active');
-    }); 
 
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        counter.innerHTML = parseInt(counter.innerHTML) + 1;
+    });
 });
+decrement.addEventListener('click', () => {
+    counter.innerHTML = Math.max(0,parseInt(counter.innerHTML) - 1);
+});
+
